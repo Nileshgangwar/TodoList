@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #D071F9;
+    padding: 0 10px;
+}
+.container{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+}
+.container .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #D071F9;
+    text-transform: uppercase;
+    text-align: center;
+}
+.container .form{
+    width: 100%;
+
+}
+.container .form .input_feild{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.container .form .input_feild label{
+    width: 150px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.container .form .input_feild .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #D071F9;
+    font: 14px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transform: all 0.5s ease;
+}
+.container .form .input_feild .input:focus{
+    border: 1px solid purple;
+}
+.container .form .input_feild .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: none;
+    background-color: #D071F9;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+}
+.container .form .input_feild:last-child{
+    margin-bottom: 0;
+}
+.container .form .input_feild .btn:hover{
+    background-color: purple;
+}
+
+@media (max-width: 420px){
+    .container .form .input_feild{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container .form .input_feild label{
+        margin-bottom: 5px;
+    }
+}
